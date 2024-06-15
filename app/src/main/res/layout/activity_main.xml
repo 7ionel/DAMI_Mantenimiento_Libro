@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".MainActivity"
-android:orientation="vertical">
-
-<TextView
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:padding="10dp"
-    android:text="Consulta Libro"
-    android:textAlignment="center"
-    android:textSize="18sp"
-    android:textStyle="bold" />
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"> <!-- Layout principal de tipo LinearLayout en orientación vertical -->
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:padding="5dp"
-    android:text="Título"
-    android:textAlignment="center"
-    />
+  <!-- Título de la pantalla -->
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:padding="10dp"
+      android:text="Consulta Libro"
+      android:textAlignment="center"
+      android:textSize="18sp"
+      android:textStyle="bold" />
 
-<EditText
-    android:id="@+id/txtRegTitulo"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:padding="5dp"/>
+  <!-- Etiqueta para el campo de título -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:padding="5dp"
+      android:text="Título"
+      android:textAlignment="center"/>
 
-<Button
-    android:id="@+id/btnLista"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:padding="5dp"
-    android:text="Buscar"/>
+  <!-- Campo de texto para ingresar el título del libro -->
+  <EditText
+      android:id="@+id/txtRegTitulo"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:padding="5dp"/>
 
+  <!-- Botón para buscar libros -->
+  <Button
+      android:id="@+id/btnLista"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:padding="5dp"
+      android:text="Buscar"/>
+
+  <!-- Botón para registrar un nuevo libro -->
   <Button
       android:id="@+id/btnRegistrar"
       android:layout_width="match_parent"
@@ -49,20 +54,11 @@ android:orientation="vertical">
       android:padding="5dp"
       android:text="Registrar" />
 
-
-<ListView
-    android:id="@+id/lstConsultaLibros"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="5dp"
-    android:padding="5dp"
-    />
-
-
-
-
-
-
-
-
+  <!-- ListView para mostrar la lista de libros consultados -->
+  <ListView
+      android:id="@+id/lstConsultaLibros"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="5dp"
+      android:padding="5dp"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

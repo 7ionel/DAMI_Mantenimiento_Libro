@@ -6,8 +6,7 @@
     android:weightSum="12"
     android:padding="10dp">
 
-
-
+    <!-- TextView para el ID del libro -->
     <TextView
         android:id="@+id/itemIdLibro"
         android:layout_width="0dp"
@@ -18,6 +17,7 @@
         android:textStyle="bold"
         />
 
+    <!-- LinearLayoutCompat vertical para otros detalles del libro -->
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
         android:layout_weight="10"
         android:weightSum="4">
 
-
+        <!-- TextView para el título del libro -->
         <TextView
             android:id="@+id/itemTituloLibro"
             android:layout_width="match_parent"
@@ -34,6 +34,7 @@
             android:layout_weight="1"
             />
 
+        <!-- TextView para el año del libro -->
         <TextView
             android:id="@+id/itemAnioLibro"
             android:layout_width="match_parent"
@@ -42,6 +43,7 @@
             android:layout_weight="1"
             />
 
+        <!-- TextView para la serie del libro -->
         <TextView
             android:id="@+id/itemSerieLibro"
             android:layout_width="match_parent"
@@ -50,6 +52,7 @@
             android:layout_weight="1"
             />
 
+        <!-- TextView para la categoría del libro -->
         <TextView
             android:id="@+id/itemCategoriaLibro"
             android:layout_width="match_parent"
@@ -58,6 +61,7 @@
             android:layout_weight="1"
             />
 
+        <!-- TextView para el país del libro -->
         <TextView
             android:id="@+id/itemPaisLibro"
             android:layout_width="match_parent"
